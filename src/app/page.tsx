@@ -263,7 +263,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="font-semibold text-lg">Email</h4>
-                    <p className="text-slate-300">info@breezecool.com</p>
+                    <p className="text-slate-300">info@gokahac.com</p>
                   </div>
                 </div>
               </FadeIn>
