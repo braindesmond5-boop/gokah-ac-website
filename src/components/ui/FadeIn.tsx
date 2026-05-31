@@ -5,12 +5,14 @@ export function FadeIn({
   children, 
   delay = 0, 
   className = "",
-  direction = "up"
+  direction = "up",
+  style
 }: { 
   children: React.ReactNode, 
   delay?: number, 
   className?: string,
-  direction?: "up" | "down" | "left" | "right" | "none"
+  direction?: "up" | "down" | "left" | "right" | "none",
+  style?: React.CSSProperties
 }) {
   const directions = {
     up: { y: 30, x: 0 },
@@ -27,6 +29,7 @@ export function FadeIn({
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.6, delay, ease: "easeOut" }}
       className={className}
+      style={style}
     >
       {children}
     </motion.div>
